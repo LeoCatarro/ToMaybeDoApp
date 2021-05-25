@@ -18,5 +18,7 @@ class NotesBoard : AppCompatActivity() {
             val intent = Intent(this@NotesBoard, MainActivity::class.java)
             startActivity(intent)
         }
+
+        //
     }
 }

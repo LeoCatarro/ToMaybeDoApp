@@ -12,28 +12,28 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         title="ToMaybeDoApp";
 
-        //Button to switch to Calendar Activity
+        //Calendar Activity Button
         val calendarButton:Button = findViewById(R.id.btnOpenCalendar);
         calendarButton.setOnClickListener {
             val intent = Intent(this@MainActivity, Calendar::class.java)
             startActivity(intent)
         }
 
-        //Button to switch to DataDashboard Activity
+        //DataDashboard Activity Button
         val dataDashboardButton:Button = findViewById(R.id.btnOpenDataDashboard);
         dataDashboardButton.setOnClickListener {
             val intent = Intent(this@MainActivity, DataDashboard::class.java)
             startActivity(intent)
         }
 
-        //Button to switch to DiagramCreator Activity
+        //DiagramCreator Activity Button
         val diagramCreatorButton:Button = findViewById(R.id.btnOpenDiagramCreator);
         diagramCreatorButton.setOnClickListener {
             val intent = Intent(this@MainActivity, DiagramCreator::class.java)
             startActivity(intent)
         }
 
-        //Button to switch to NotesBoard Activity
+        //NotesBoard Activity Button
         val notesBoardButton:Button = findViewById(R.id.btnOpenNotesBoard);
         notesBoardButton.setOnClickListener {
             val intent = Intent(this@MainActivity, NotesBoard::class.java)

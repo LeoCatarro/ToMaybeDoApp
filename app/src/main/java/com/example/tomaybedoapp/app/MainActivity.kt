@@ -1,9 +1,10 @@
-package com.example.tomaybedoapp
+package com.example.tomaybedoapp.app
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.example.tomaybedoapp.R
 
 class MainActivity : AppCompatActivity() {
 

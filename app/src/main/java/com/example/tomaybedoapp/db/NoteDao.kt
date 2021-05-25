@@ -1,10 +1,11 @@
-package com.example.tomaybedoapp.data
+package com.example.tomaybedoapp.db
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
+import com.example.tomaybedoapp.models.Note
 
 @Dao
 interface NoteDao {

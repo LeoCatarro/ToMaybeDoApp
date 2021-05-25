@@ -1,6 +1,8 @@
-package com.example.tomaybedoapp.data
+package com.example.tomaybedoapp.repo
 
 import androidx.lifecycle.LiveData
+import com.example.tomaybedoapp.db.NoteDao
+import com.example.tomaybedoapp.models.Note
 
 class NoteRepository(private val noteDao: NoteDao) {
 

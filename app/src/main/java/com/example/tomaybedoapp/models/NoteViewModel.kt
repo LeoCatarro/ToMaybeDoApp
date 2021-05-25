@@ -1,9 +1,12 @@
-package com.example.tomaybedoapp.data
+package com.example.tomaybedoapp.models
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
+import com.example.tomaybedoapp.db.ToMaybeDoAppDatabase
+import com.example.tomaybedoapp.models.Note
+import com.example.tomaybedoapp.repo.NoteRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

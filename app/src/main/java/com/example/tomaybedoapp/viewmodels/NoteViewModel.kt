@@ -32,4 +32,16 @@ class NoteViewModel(application: Application): AndroidViewModel(application){
             repository.updateNote(note)
         }
     } //Function executed on a background thread
+
+    fun deleteNote(note: Note){
+        viewModelScope.launch(Dispatchers.IO){
+            repository.deleteNote(note)
+        }
+    }//Function executed on a background thread
+
+    fun deleteAllNotes(){
+        viewModelScope.launch(Dispatchers.IO){
+            repository.deleteAllNotes()
+        }
+    }//Function executed on a background thread
 }

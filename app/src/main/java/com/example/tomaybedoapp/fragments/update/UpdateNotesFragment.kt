@@ -1,11 +1,10 @@
 package com.example.tomaybedoapp.fragments.update
 
+import android.app.AlertDialog
 import android.os.Bundle
 import android.text.TextUtils
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
@@ -39,6 +38,9 @@ class UpdateNotesFragment : Fragment() {
             updateNote()
         }
 
+        //Add delete menu
+        setHasOptionsMenu(true)
+
         return view
     }
 
@@ -68,5 +70,33 @@ class UpdateNotesFragment : Fragment() {
     //Return true if all fields are filled correctly
     private fun checkInput(title: String, description: String): Boolean{
         return !(TextUtils.isEmpty(title) && TextUtils.isEmpty(description))
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+       inflater.inflate(R.menu.delete_menu, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        if(item.itemId == R.id.delete_note_menu){
+            deleteNote()
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+    private fun deleteNote() {
+        val builder = AlertDialog.Builder(requireContext())
+        builder.setPositiveButton("Yes") {_, _ ->
+            //If pressed "Yes" lets remove the Note from DB!
+            mNoteViewModel.deleteNote(args.currentNote)
+            //Successfuly removed note message
+            Toast.makeText(requireContext(), "Successfuly Removed ${args.currentNote.title}", Toast.LENGTH_SHORT).show()
+            //Navigate back to ListNotes Fragment
+            findNavController().navigate(R.id.action_updateNotesFragment_to_listNotes)
+        }
+        builder.setNegativeButton("No") {_, _ -> }
+        builder.setTitle("Delete ${args.currentNote.title}?")
+        builder.setMessage("Are you about to delete ${args.currentNote.title}?")
+        builder.create().show()
     }
 }

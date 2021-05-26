@@ -11,7 +11,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.tomaybedoapp.R
 import com.example.tomaybedoapp.models.Note
-import com.example.tomaybedoapp.models.NoteViewModel
+import com.example.tomaybedoapp.viewmodels.NoteViewModel
 import kotlinx.android.synthetic.main.fragment_add_notes.*
 import kotlinx.android.synthetic.main.fragment_add_notes.view.*
 

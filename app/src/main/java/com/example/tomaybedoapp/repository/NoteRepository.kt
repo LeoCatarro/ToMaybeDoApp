@@ -1,4 +1,4 @@
-package com.example.tomaybedoapp.repo
+package com.example.tomaybedoapp.repository
 
 import androidx.lifecycle.LiveData
 import com.example.tomaybedoapp.db.NoteDao

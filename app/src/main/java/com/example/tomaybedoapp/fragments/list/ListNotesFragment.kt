@@ -5,13 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ListAdapter
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.tomaybedoapp.R
-import com.example.tomaybedoapp.models.NoteViewModel
+import com.example.tomaybedoapp.viewmodels.NoteViewModel
 import kotlinx.android.synthetic.main.fragment_list_notes.view.*
 
 

@@ -8,11 +8,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ToMaybeDoApp">
-        <activity android:name=".app.DiagramCreator"></activity>
-        <activity android:name=".app.NotesActivity" />
-        <activity android:name=".app.DataDashboard" />
-        <activity android:name=".app.Calendar" />
-        <activity android:name=".app.MainActivity">
+        <activity android:name=".DiagramCreator"></activity>
+        <activity android:name=".NotesActivity" />
+        <activity android:name=".DataDashboard" />
+        <activity android:name=".Calendar" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -34,10 +34,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        //NotesBoard Activity Button
+        //NotesActivity Activity Button
         val notesBoardButton:Button = findViewById(R.id.btnOpenNotesBoard);
         notesBoardButton.setOnClickListener {
-            val intent = Intent(this@MainActivity, NotesBoard::class.java)
+            val intent = Intent(this@MainActivity, NotesActivity::class.java)
             startActivity(intent)
         }
     }

@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ToMaybeDoApp">
         <activity android:name=".app.DiagramCreator"></activity>
-        <activity android:name=".app.NotesBoard" />
+        <activity android:name=".app.NotesActivity" />
         <activity android:name=".app.DataDashboard" />
         <activity android:name=".app.Calendar" />
         <activity android:name=".app.MainActivity">

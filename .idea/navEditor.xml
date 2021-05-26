@@ -13,8 +13,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="186" />
-                            <option name="y" value="-90" />
+                            <option name="x" value="125" />
+                            <option name="y" value="-301" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -34,8 +34,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-58" />
-                            <option name="y" value="-33" />
+                            <option name="x" value="-123" />
+                            <option name="y" value="-154" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -45,23 +45,28 @@
                                 <LayoutPositions />
                               </value>
                             </entry>
+                            <entry key="action_listNotes_to_updateNotesFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                           </map>
                         </option>
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="notesActivity">
+                  <entry key="updateNotesFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-287" />
-                            <option name="y" value="56" />
+                            <option name="x" value="127" />
+                            <option name="y" value="61" />
                           </Point>
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_addNotes_to_listNotes">
+                            <entry key="action_updateNotesFragment_to_listNotes">
                               <value>
                                 <LayoutPositions />
                               </value>

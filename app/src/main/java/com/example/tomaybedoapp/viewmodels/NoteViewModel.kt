@@ -25,5 +25,11 @@ class NoteViewModel(application: Application): AndroidViewModel(application){
         viewModelScope.launch(Dispatchers.IO) {
             repository.addNote(note)
         }
-    }
+    } //Function executed on a background thread
+
+    fun updateNote(note: Note){
+        viewModelScope.launch(Dispatchers.IO) {
+            repository.updateNote(note)
+        }
+    } //Function executed on a background thread
 }

@@ -37,5 +37,12 @@
             android:layout_height="50dp"
             android:layout_weight="50"
             android:src="@drawable/ic_baseline_redo" />
+
+        <ImageView
+            android:id="@+id/ClearAllPaths"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="50"
+            android:src="@drawable/ic_delete" />
     </LinearLayout>
 </LinearLayout>

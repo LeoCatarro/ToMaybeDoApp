@@ -120,4 +120,15 @@ open class DrawPath @JvmOverloads constructor(context: Context, attrs: Attribute
 
     }
 
+    fun setDeleteAll() {
+        var listSize = pathList.size
+
+        if(listSize > 0)
+        {
+            pathList.clear()
+            undoPathList.clear()
+            invalidate()
+        }
+    }
+
 }

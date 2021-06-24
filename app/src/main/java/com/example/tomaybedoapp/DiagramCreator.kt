@@ -27,5 +27,9 @@ class DiagramCreator : AppCompatActivity() {
         ControlRedo.setOnClickListener {
             PaintArea.setRedo()
         }
+
+        ClearAllPaths.setOnClickListener {
+            PaintArea.setDeleteAll()
+        }
     }
 }

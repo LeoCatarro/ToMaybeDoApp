@@ -5,7 +5,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.firebase.ui.auth.AuthUI
-import com.google.android.gms.auth.api.Auth
 import com.google.android.gms.common.SignInButton
 
 private const val REQUEST_SIGN_IN = 12345
@@ -15,7 +14,7 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        setupLogin()
+        setupLogin()    //Login with google function using FireBase
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

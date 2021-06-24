@@ -94,7 +94,7 @@ open class DrawPath @JvmOverloads constructor(context: Context, attrs: Attribute
         mPath!!.lineTo(mX!!, mY!!)
     }
 
-
+    //Function to handle the undo functionality
     fun setUndo()
     {
         var listSize = pathList.size
@@ -107,6 +107,7 @@ open class DrawPath @JvmOverloads constructor(context: Context, attrs: Attribute
         }
     }
 
+    //Function to handle the reundo functionality
     fun setRedo()
     {
         var listSize = undoPathList.size
@@ -120,6 +121,7 @@ open class DrawPath @JvmOverloads constructor(context: Context, attrs: Attribute
 
     }
 
+    //Function to clear all paths in page
     fun setDeleteAll() {
         var listSize = pathList.size
 

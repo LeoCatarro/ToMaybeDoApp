@@ -1,22 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
-    <TextView
-        android:layout_width="wrap_content"
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <com.example.tomaybedoapp.DrawPath
+            android:id="@+id/PaintArea"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
-        android:text="Diagram Creator"
-        android:textColor="@android:color/holo_green_dark"
-        android:textSize="24sp"
-        android:textStyle="bold" />
-    <Button
-        android:id="@+id/btnOpenMain"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Back To MainActivity" />
-</RelativeLayout>
+        android:layout_gravity="center"
+        android:layout_weight="100">
+
+    <ImageView
+            android:id="@+id/ControlUndo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="50"
+            android:src="@drawable/ic_baseline_undo" />
+
+        <ImageView
+            android:id="@+id/ControlRedo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="50"
+            android:src="@drawable/ic_baseline_redo" />
+    </LinearLayout>
+</LinearLayout>

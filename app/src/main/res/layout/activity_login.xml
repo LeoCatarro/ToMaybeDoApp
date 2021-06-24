@@ -25,6 +25,13 @@
             android:text="ToMaybeDo"
             android:textStyle="bold"
             android:textSize="60sp">
+        </TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_todoicon_background">
+        </ImageView>
     </LinearLayout>
 
     <!--Sign Button-->

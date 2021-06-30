@@ -9,8 +9,10 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.tomaybedoapp.R
 
-class NotesActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
+class NotesActivity : AppCompatActivity()
+{
+    override fun onCreate(savedInstanceState: Bundle?)
+    {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_notes_board)
 

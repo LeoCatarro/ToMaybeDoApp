@@ -12,15 +12,17 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         title = "ToMaybeDoApp";
 
-        //DiagramCreator Activity Button
-        val diagramCreatorButton:Button = findViewById(R.id.btnOpenDiagramCreator);
-        diagramCreatorButton.setOnClickListener {
-            startActivity(Intent(this, DiagramCreator::class.java))
-        }
         //NotesActivity Activity Button
         val notesBoardButton:Button = findViewById(R.id.btnOpenNotesBoard);
         notesBoardButton.setOnClickListener {
             startActivity(Intent(this, NotesActivity::class.java))
         }
+
+        //DiagramCreator Activity Button
+        val diagramCreatorButton:Button = findViewById(R.id.btnOpenDiagramCreator);
+        diagramCreatorButton.setOnClickListener {
+            startActivity(Intent(this, DiagramCreator::class.java))
+        }
+
     }
 }

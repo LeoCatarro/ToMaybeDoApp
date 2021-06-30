@@ -13,13 +13,6 @@ class DiagramCreator : AppCompatActivity() {
 
         title="ToMaybeDoApp";
 
-        //Main Buttons OnClickListener events
-        /*val button: Button = findViewById(R.id.btnOpenMain);
-        button.setOnClickListener {
-            val intent = Intent(this@DiagramCreator, MainActivity::class.java)
-            startActivity(intent)
-        }*/
-
         ControlUndo.setOnClickListener {
             PaintArea.setUndo()
         }

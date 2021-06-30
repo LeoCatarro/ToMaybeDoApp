@@ -19,7 +19,7 @@
         </activity>
         <activity
             android:name=".DiagramCreator"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+            android:theme="@style/Theme.ToMaybeDoApp">
         </activity>
         <activity android:name=".NotesActivity">
         </activity>

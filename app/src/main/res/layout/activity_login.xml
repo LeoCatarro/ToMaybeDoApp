@@ -10,45 +10,29 @@
     tools:context=".LoginActivity">
 
     <!--Title-->
-    <LinearLayout
-        android:layout_marginTop="150dp"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:orientation="vertical"
-        android:gravity="center">
 
-        <TextView
-            android:id="@+id/appTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/annie_use_your_telescope"
-            android:text="ToMaybeDo"
-            android:textStyle="bold"
-            android:textSize="60sp">
-        </TextView>
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/annie_use_your_telescope"
+        android:text="ToMaybeDo"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        android:textStyle="bold" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_todoicon_background">
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_pencilicon_foreground">
         </ImageView>
-    </LinearLayout>
 
     <!--Sign Button-->
-    <LinearLayout
-        android:layout_marginTop="100dp"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:orientation="vertical"
-        android:gravity="center">
-
-        <com.google.android.gms.common.SignInButton
-            android:id="@+id/SignButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:buttonSize="wide"
-        />
-    </LinearLayout>
-
-
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/SignButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:buttonSize="wide"
+    />
 </LinearLayout>

@@ -34,6 +34,7 @@ class LoginActivity : AppCompatActivity() {
                 AuthUI.getInstance()
                     .createSignInIntentBuilder()
                     .setAvailableProviders(providers)
+                    .setIsSmartLockEnabled(false)
                     .build(),
                 REQUEST_SIGN_IN
             )

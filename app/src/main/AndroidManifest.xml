@@ -19,9 +19,11 @@
         </activity>
         <activity
             android:name=".DiagramCreator"
-            android:theme="@style/Theme.ToMaybeDoApp">
+            android:theme="@style/Theme.ToMaybeDoApp"
+            android:parentActivityName="com.example.tomaybedoapp.MainActivity">
         </activity>
-        <activity android:name=".NotesActivity">
+        <activity android:name=".NotesActivity"
+            android:parentActivityName="com.example.tomaybedoapp.MainActivity">
         </activity>
         <activity
             android:name=".MainActivity"
@@ -29,8 +31,8 @@
         </activity>
 
         <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.tomaybedoapp.MainActivity" />
     </application>
 
 </manifest>

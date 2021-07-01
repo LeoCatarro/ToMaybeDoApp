@@ -1,6 +1,7 @@
 package com.example.tomaybedoapp.fragments.update
 
 import android.app.AlertDialog
+import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
 import android.view.*
@@ -9,6 +10,7 @@ import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import com.example.tomaybedoapp.NotesActivity
 import com.example.tomaybedoapp.R
 import com.example.tomaybedoapp.models.Note
 import com.example.tomaybedoapp.viewmodels.NoteViewModel
@@ -57,7 +59,7 @@ class UpdateNotesFragment : Fragment() {
             //Successfully Updated Note Message
             Toast.makeText(requireContext(), "Successfuly Updated!", Toast.LENGTH_SHORT).show()
             //Navigate back to ListNotes Fragment
-            findNavController().navigate(R.id.action_updateNotesFragment_to_listNotes)
+            findNavController().navigate(R.id.action_updateNotesFragment_to_notesActivity)
         }
 
         else
@@ -92,7 +94,7 @@ class UpdateNotesFragment : Fragment() {
             //Successfuly removed note message
             Toast.makeText(requireContext(), "Successfuly Removed ${args.currentNote.title}", Toast.LENGTH_SHORT).show()
             //Navigate back to ListNotes Fragment
-            findNavController().navigate(R.id.action_updateNotesFragment_to_listNotes)
+            findNavController().navigate(R.id.action_updateNotesFragment_to_notesActivity)
         }
         builder.setNegativeButton("No") {_, _ -> }
         builder.setTitle("Delete ${args.currentNote.title}?")

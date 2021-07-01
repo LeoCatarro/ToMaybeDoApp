@@ -15,7 +15,7 @@ import com.example.tomaybedoapp.viewmodels.NoteViewModel
 import kotlinx.android.synthetic.main.fragment_add_notes.*
 import kotlinx.android.synthetic.main.fragment_add_notes.view.*
 
-class AddNotesFragment : Fragment() {
+class AddNotesFragment : Fragment(){
 
     private lateinit var myNoteViewModel: NoteViewModel
 
@@ -52,7 +52,7 @@ class AddNotesFragment : Fragment() {
             Toast.makeText(requireContext(), "Successfully Added!", Toast.LENGTH_LONG).show()
 
             //Return to the view ListNotesFragment
-            findNavController().navigate(R.id.action_addNotes_to_listNotes)
+            findNavController().navigate(R.id.action_addNotes_to_notesActivity)
 
         } else {
             //Warning message
@@ -61,10 +61,11 @@ class AddNotesFragment : Fragment() {
         }
     }
 
+
+
     //Check if input data for title and description are null or not
     //Return true if all fields are filled correctly
     private fun checkInput(title: String, description: String): Boolean{
         return !(TextUtils.isEmpty(title) && TextUtils.isEmpty(description))
     }
-
 }

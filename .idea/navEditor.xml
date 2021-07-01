@@ -75,15 +75,6 @@
                             <option name="y" value="-301" />
                           </Point>
                         </option>
-                        <option name="myPositions">
-                          <map>
-                            <entry key="action_addNotes_to_listNotes">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                          </map>
-                        </option>
                       </LayoutPositions>
                     </value>
                   </entry>
@@ -113,6 +104,18 @@
                       </LayoutPositions>
                     </value>
                   </entry>
+                  <entry key="notesActivity">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="486" />
+                            <option name="y" value="-140" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="updateNotesFragment">
                     <value>
                       <LayoutPositions>
@@ -124,7 +127,7 @@
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_updateNotesFragment_to_listNotes">
+                            <entry key="action_updateNotesFragment_to_notesActivity">
                               <value>
                                 <LayoutPositions />
                               </value>

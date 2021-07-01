@@ -33,8 +33,8 @@ class LoginActivity : AppCompatActivity() {
             startActivityForResult(
                 AuthUI.getInstance()
                     .createSignInIntentBuilder()
-                    .setAvailableProviders(providers)
                     .setIsSmartLockEnabled(false)
+                    .setAvailableProviders(providers)
                     .build(),
                 REQUEST_SIGN_IN
             )

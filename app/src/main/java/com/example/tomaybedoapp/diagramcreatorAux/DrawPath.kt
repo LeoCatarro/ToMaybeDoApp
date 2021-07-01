@@ -1,4 +1,4 @@
-package com.example.tomaybedoapp
+package com.example.tomaybedoapp.diagramcreatorAux
 
 import android.content.Context
 import android.graphics.Canvas
@@ -8,9 +8,8 @@ import android.graphics.Path
 import android.util.AttributeSet
 import android.view.MotionEvent
 import android.view.View
-import androidx.loader.content.Loader
+import com.example.tomaybedoapp.diagramcreatorAux.PaintPath
 import java.lang.Math.abs
-import java.nio.channels.FileLock
 
 open class DrawPath @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0): View(context, attrs, defStyleAttr)
 {

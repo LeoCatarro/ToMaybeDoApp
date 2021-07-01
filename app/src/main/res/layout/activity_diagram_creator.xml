@@ -12,7 +12,7 @@
         android:layout_height="600dp"
         android:orientation="vertical">
 
-        <com.example.tomaybedoapp.DrawPath
+        <com.example.tomaybedoapp.diagramcreatorAux.DrawPath
             android:id="@+id/PaintArea"
             android:layout_width="match_parent"
             android:layout_height="600dp"/>

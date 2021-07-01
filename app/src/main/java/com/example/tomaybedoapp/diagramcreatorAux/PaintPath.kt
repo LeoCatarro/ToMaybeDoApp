@@ -1,4 +1,4 @@
-package com.example.tomaybedoapp
+package com.example.tomaybedoapp.diagramcreatorAux
 
 import android.graphics.Path
 

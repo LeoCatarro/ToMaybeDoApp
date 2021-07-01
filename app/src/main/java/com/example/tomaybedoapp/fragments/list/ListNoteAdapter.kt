@@ -25,7 +25,8 @@ class ListNoteAdapter: RecyclerView.Adapter<ListNoteAdapter.MyViewHolder>() {
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val currentItem = noteList[position]
-        holder.itemView.id_txt.text = currentItem.id.toString()
+        //holder.itemView.id_txt.text = currentItem.id.toString()
+        holder.itemView.id_txt.text = (position+1).toString()
         holder.itemView.noteTitle_txt.text = currentItem.title
         holder.itemView.noteDescription_txt.text = currentItem.description
 

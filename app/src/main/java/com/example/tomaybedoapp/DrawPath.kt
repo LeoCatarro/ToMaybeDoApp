@@ -26,7 +26,7 @@ open class DrawPath @JvmOverloads constructor(context: Context, attrs: Attribute
     //Initialize paint path variable
     init {
         paint = Paint()
-        paint!!.color = Color.RED
+        paint!!.color = Color.BLACK
         paint!!.strokeWidth = 10f
         paint!!.style = Paint.Style.STROKE
         paint!!.isAntiAlias = true

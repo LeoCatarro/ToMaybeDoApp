@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.add.AddNotesFragment">
+    tools:context=".fragments.add.AddNotesFragment"
+    android:background="#cccccc">
 
     <EditText
         android:id="@+id/addNotesTitle_et"
@@ -44,5 +45,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addNotesDescription_et" />
+        app:layout_constraintTop_toBottomOf="@+id/addNotesDescription_et"
+        android:backgroundTint="#666666"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

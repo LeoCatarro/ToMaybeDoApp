@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.list.ListNotesFragment">
+    tools:context=".fragments.list.ListNotesFragment"
+    android:background="#cccccc">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerNotesView"
@@ -27,8 +28,8 @@
         android:clickable="true"
         android:focusable="true"
         android:src="@drawable/ic_add"
-        android:tint="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#1aa3ff">
     </com.google.android.material.floatingactionbutton.FloatingActionButton>
 </androidx.constraintlayout.widget.ConstraintLayout>

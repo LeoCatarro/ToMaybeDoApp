@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.update.UpdateNotesFragment"
-    android:padding="24dp">
+    android:padding="24dp"
+    android:background="#cccccc">
 
     <EditText
         android:id="@+id/updateNotesTitle_et"
@@ -45,6 +46,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/updateNotesDescription_et" />
+        app:layout_constraintTop_toBottomOf="@+id/updateNotesDescription_et"
+        android:backgroundTint="#666666"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
